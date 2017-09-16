@@ -1,6 +1,15 @@
 class Appointments extends React.Component {
   render() {
-    return <h1>CalReact</h1>;
+    return <div>
+      {this.props.appointments.map(function(appointment) {
+        return (
+          <div>
+            <h3>{appointment.title}</h3>
+            <p>{appointment.appt_time}</p>
+          </div>
+        )
+      })}
+    </div>
   }
 }
 
