@@ -8,6 +8,6 @@ class AppointmentList extends React.Component {
           )
         })}
       </div>
-    )
+    );
   }
 }
