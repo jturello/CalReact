@@ -1,6 +1,12 @@
 // Place all the styles related to the Appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$red : #CC0000;
+$white: #FFFFFF;
+$off-white: #fef7e2;
+$reddish-black: #591100;
+$red-gray: #635000;
+
 
 body {
   max-width: 500px;
@@ -20,6 +26,21 @@ input[type=text]{
   background-color: lightgoldenrodyellow;
 }
 
-input[type=submit] {
-  background-color: lightgray;
+.submit-button {
+  background-color: $red;
+  color: $off-white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $red-gray;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.appointment {
+  padding-top: 5px;
+  border-bottom: solid 1px $red-gray;
 }
