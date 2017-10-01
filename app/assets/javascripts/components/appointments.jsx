@@ -30,7 +30,7 @@ class Appointments extends React.Component {
       })
     .error (function (xhr) {
       // TODO add error handling
-      console.log('error callback', xhr)
+      console.log('error callback', 'xhr: ' + xhr)
     })
   }
 
