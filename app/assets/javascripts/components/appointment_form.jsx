@@ -15,12 +15,18 @@ class AppointmentForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.onFormSubmit();
+    if (e.target.elements.appt_time.value.length > 0) {
+      this.props.onFormSubmit();
+    }
+    else {
+      alert('Please select a Date/Time!');
+    }
   }
 
   setApptTime (e) {
+    const name = 'appt_time';
     const obj = {};
-    if(obj[this.inputProps.name]=e.toDate()) {
+    if (obj[name] = e.toDate()) {
       this.props.onUserInput(obj);
     }
   }
@@ -29,6 +35,8 @@ class AppointmentForm extends React.Component {
     this.inputProps = {
       name: 'appt_time',
       placeholder: 'Select a Date/Time',
+      readOnly: true,
+      required: true
     }
 
     return (
