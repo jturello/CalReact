@@ -47,7 +47,7 @@ class AppointmentForm extends React.Component {
                  required={true} value={this.props.title}
                  onChange={this.handleChange}
           />
-          <Datetime input={false} open={true} inputProps={this.inputProps}
+          <Datetime /* input={false} */ open={true} inputProps={this.inputProps}
                     value={this.props.appt_time}
                     onChange={this.setApptTime}
           />
