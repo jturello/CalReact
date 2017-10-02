@@ -23,24 +23,39 @@ input{
 }
 
 input[type=text]{
-  background-color: lightgoldenrodyellow;
+  background-color: $off-white;
+}
+
+input[name='appt_time'] {
+  background-color: whitesmoke;
 }
 
 .submit-button {
   background-color: $red;
   color: $off-white;
   cursor: pointer;
-  border: 0;
-  border-radius: 0px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: $red-gray;
+  border: 2px solid $red-gray;
+  border-radius: 5px;
   box-shadow: none;
   font-size: 20px;
   padding: 10px;
 }
 
 .appointment {
-  padding-top: 5px;
+  padding-top: 3px;
   border-bottom: solid 1px $red-gray;
 }
+
+
+/*******  DEBUG STYLES  **********
+
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
+
+/********************************/
